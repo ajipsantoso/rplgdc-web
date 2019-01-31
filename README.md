@@ -1,6 +1,11 @@
 # RPL & GDC Web
 
 ## Instalasi Project
+
+- Pastikan sudah menginstal Node.js & vue-cli versi terbaru (3.0), jika belum ikuti langkah disini https://cli.vuejs.org/guide/installation.html untuk instalasi vue-cli nya
+- Clone repository ini
+- Setelah itu masuk ke dalam folder project, lalu ikuti cara instalasi seperti dibawah
+
 ```
 npm install
 ```
