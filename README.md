@@ -20,10 +20,10 @@ npm run serve
 
 ### Untuk Halaman Home
 ```
-Untuk Halaman Home/Index silahkan Kerjakan pada Component **Home.vue** di dalam folder /src/components/Home.vue
+Untuk Halaman Home/Index silahkan Kerjakan pada Component Home.vue di dalam folder /src/components/Home.vue
 ```
 
 ### Untuk Halaman Product
 ```
-Untuk Halaman Product silahkan Kerjakan pada Component **Product.vue** di dalam folder /src/components/Product.vue
+Untuk Halaman Product silahkan Kerjakan pada Component Product.vue di dalam folder /src/components/Product.vue
 ```
