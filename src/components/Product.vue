@@ -97,10 +97,13 @@ export default {
   .header{
     background-image:url("../assets/Header_Product_Form.png");
     width: 100%;
-    height: 500px;
+    height: 430px;
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
+  }
+  .navbar{
+    padding: 0;
   }
   .row{
     margin-bottom: 100px;
@@ -118,11 +121,7 @@ export default {
     margin-top: 10px;
     margin-bottom: 15px;
   }
-  
-  .navbar{
-    padding: 0;
-  }
-  
+
   .achievement{
     width: 100%;
     height: 60px;
@@ -161,27 +160,53 @@ export default {
   }
 
   @media (max-width: 575.98px) { 
+    .header{
+      height: 150px;
+    }
     .linetxt{
-      text-align: center;
+      text-align: center; 
+    }
+    .linetxt .link{
+      margin-top: 20px;
+      position: relative;
+      bottom:none;
     }
     .achievement{
-      height: auto;
-    }
-    .piala{
-      width: 40px;
+      width: 100%;
+      height: 110px;
+      font-weight: bold;
+      margin-top: 15px;    
+      
     }
     .ach_img{
       width: auto;
+      text-align: center;
       height: 40px;
-      align-content: center;
+      position: none;
       float: none;
     }
+    .piala{
+      width: 40px;
+      position: relative;
+      
+    }
     .ach_dec{
-      float: none;
+      float: inherit;
+      height: 70px;
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+    .ach_dec_text{
+      position: relative;
+      
     }
   }
   @media (min-width: 576px) and (max-width: 823.98px) {
-    
+    .header{
+      height: 250px;
+    }
     .poster_img{
       width: 60%;
       position: absolute;
@@ -193,24 +218,30 @@ export default {
     }
     .achievement{
       display: inline-block;
-      height: 90px;
+      height: 70px;
     }
     .piala{
-      margin-top: 10px;
-      margin-bottom: 10px;
-      vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
     .ach_img{
-      margin-top: 10px;
-      margin-bottom: 10px;
       height: 100%;
       float: left;
-      width: 10%;
+      width: 12%;
+      position: relative;
       vertical-align: middle;
     } 
     .ach_dec{
       float: right;
-      width: 90%;
+      width: 88%;
+      height: 70px;
+      position: relative;
+    }
+    .ach_dec_text{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
     .row{
       height: 280px;
