@@ -6,11 +6,10 @@
     <div class="header"></div>
     <div class="container">
       <div class="row" v-for="(item, index) in itemss" :key="index">
-        <div class="col-sm poster">
-          
+        <div class="col-sm-5 poster">
           <img class="poster_img" :src="item.icon" alt="No Image">
         </div>
-        <div class="col-sm linetxt">
+        <div class="col-sm-7 linetxt">
           <div class="judul"> 
             {{item.judul}}
           </div>
@@ -35,6 +34,7 @@
         </div>
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -45,6 +45,7 @@ import img3 from '../assets/Poster_Katsir.png'
 
 import header from '../assets/Header_Product_Form.png'
 import Navbarr from './Navbarr.vue'
+import Footer from './Footer.vue'
 
 export default {
   
@@ -77,7 +78,7 @@ export default {
         achievement:'2nd Runner Up of LINE Creativate 2018 - Chatbot Competition (Productivity Category)',
         links:[
           { text:'ADD LINE: @gbe6620b atau ',
-            link:'link.com'
+            link:'http://qr-official.line.me/L/sO1GuM3cab.png'
           },
         ],
       },
@@ -85,6 +86,7 @@ export default {
   }),
   components:{
     Navbarr,
+    Footer,
   },
 }
 </script>
@@ -106,7 +108,7 @@ export default {
     padding: 0;
   }
   .row{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .poster{
     display: inline-block;
@@ -204,11 +206,13 @@ export default {
     }
   }
   @media (min-width: 576px) and (max-width: 823.98px) {
+
     .header{
       height: 250px;
     }
+
     .poster_img{
-      width: 60%;
+      width: 80%;
       position: absolute;
       margin: auto;
       top: 0;
@@ -228,13 +232,13 @@ export default {
     .ach_img{
       height: 100%;
       float: left;
-      width: 12%;
+      width: 10%;
       position: relative;
       vertical-align: middle;
     } 
     .ach_dec{
       float: right;
-      width: 88%;
+      width: 90%;
       height: 70px;
       position: relative;
     }
@@ -244,7 +248,7 @@ export default {
       transform: translateY(-50%);
     }
     .row{
-      height: 280px;
+      height: 300px;
     }
   }
 
