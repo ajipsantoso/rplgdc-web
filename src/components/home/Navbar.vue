@@ -2,13 +2,10 @@
   <!-- untuk assets di folder src/assets/namagambar.jpg/png -->
   <div class="navbarr">
       <nav class="navbar navbar-expand-md    navbar-dark navibar" :class="dynamicNav">
-            <a class="navbar-brand" href="#">
+            <router-link to="/" class="navbar-brand">
                 <div class="logo">
-                    <div class="logo_l">
-                        
-                            <img src="../assets/icon_RPLGDC.png" width="30" height="30" class="d-inline-block align-top" alt="">
-                        
-                        
+                    <div class="logo_l">                        
+                        <img src="../../assets/icon_RPLGDC.png" width="30" height="30" class="d-inline-block align-top" alt="">
                     </div>
                     <div class="logo_r">
                         <div class="logo_txt">
@@ -16,8 +13,7 @@
                         </div>
                     </div> 
                 </div>
-                
-            </a>
+            </router-link>
             <button class="navbar-toggler" type="button" @click="navcolaps_js()"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,14 +24,17 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/home">HOME</a>
+                        <!-- <a class="nav-link" href="/">HOME</a> -->
+                        <router-link to="/" class="nav-link">HOME</router-link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/product">PRODUCT</a>
+                        <!-- <a class="nav-link" href="/product">PRODUCT</a> -->
+                        <router-link to="/product" class="nav-link">PRODUCT</router-link>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-square" type="button">JOIN US</a>
                     </li>
+                    
                 </ul>
                 
             </div>
@@ -46,12 +45,11 @@
 <script>    
 export default {
     data:()=> ({
-            dynamicNav:{
-                shrink: false,
-                navcolaps:false,
-                navcolaps_top:true
-            },
-            
+        dynamicNav:{
+            shrink: false,
+            navcolaps:false,
+            navcolaps_top:true
+        },
     }),
     methods:{
         navset(){
@@ -100,7 +98,7 @@ ul li{
 }
 .logo {
   font-size: 26px;
-    margin-left: 60px;
+  margin-left: 60px;
   width: 300px;
   height: 60px;
   position: relative;

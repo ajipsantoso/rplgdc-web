@@ -1,8 +1,7 @@
 <template>
   <!-- untuk assets di folder src/assets/namagambar.jpg/png -->
-  
   <div class="product">
-    <Navbarr/>
+    <Navbar/>
     <div class="header"></div>
     <div class="product_title">OUR PRODUCT</div>
     <div class="container">
@@ -43,8 +42,8 @@ import img2 from '../assets/Poster_Mathgrid.png'
 import img3 from '../assets/Poster_Katsir.png' 
 
 import header from '../assets/Header_Product_Form.png'
-import Navbarr from './Navbarr.vue'
-import Footer from './Footer.vue'
+import Navbar from './product/Navbar.vue'
+import Footer from './product/Footer.vue'
 
 export default {
   
@@ -84,7 +83,7 @@ export default {
     ],
   }),
   components:{
-    Navbarr,
+    Navbar,
     Footer,
   },
 }
