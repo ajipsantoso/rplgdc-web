@@ -6,7 +6,8 @@
               &copy; 2019 RPLGDC Laboratory, All Right Reserved
           </div>
           <div class="bar_right">
-              <i class="fab fa-instagram"></i><i class="fab fa-line"></i>
+              <a href="https://www.instagram.com/rplgdc_/"><i class="fab fa-instagram"></i></a>
+              <a href="https://line.me/R/ti/p/%40ajh8699v"><i class="fab fa-line"></i></a>
           </div>
       </div>
   </div>
@@ -25,9 +26,9 @@ export default {
 
 <style scoped>
     .bar{
-        border-top: 1px solid black;
+        border-top: 1px solid #1a1a1a;
+        color: #1a1a1a;
         position: relative;
-        display: inline-block;
         width: 100%;
         height: 70px;
     }
@@ -52,5 +53,8 @@ export default {
     i{
         font-size: 50px;
         margin-right: 20px;
+    }
+    a{
+        color: #1a1a1a;
     }
 </style>

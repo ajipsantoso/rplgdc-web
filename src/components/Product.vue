@@ -4,6 +4,7 @@
   <div class="product">
     <Navbarr/>
     <div class="header"></div>
+    <div class="product_title">OUR PRODUCT</div>
     <div class="container">
       <div class="row" v-for="(item, index) in itemss" :key="index">
         <div class="col-sm-5 poster">
@@ -22,14 +23,12 @@
             </div>
             <div class="ach_dec">
               <div class="ach_dec_text">{{item.achievement}}</div>
-              
             </div>
           </div>
           <div class="link">
             <div v-for="(link, idx) in item.links" :key="idx">
-              {{link.text}} <a :href="link.link">klik disini</a>
+              {{link.text}} <a :href="link.link">Click here</a>
             </div>  
-            
           </div>
         </div>
       </div>
@@ -98,11 +97,16 @@ export default {
   }
   .header{
     background-image:url("../assets/Header_Product_Form.png");
-    width: 100%;
-    height: 300px;
+    height: 340px;
     background-size: cover;
     background-position: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  .product_title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 100px;
   }
   .navbar{
     padding: 0;
@@ -164,6 +168,12 @@ export default {
   }
 
   @media (max-width: 575.98px) { 
+    .product_title{
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 80px;
+    }
     .header{
       height: 150px;
       width: 100%;
@@ -191,7 +201,6 @@ export default {
       height: 110px;
       font-weight: bold;
       margin-top: 15px;    
-      
     }
     .ach_img{
       width: auto;
