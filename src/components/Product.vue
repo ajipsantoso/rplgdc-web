@@ -78,7 +78,7 @@ export default {
         achievement:'2nd Runner Up of LINE Creativate 2018 - Chatbot Competition (Productivity Category)',
         links:[
           { text:'ADD LINE: @gbe6620b atau ',
-            link:'http://qr-official.line.me/L/sO1GuM3cab.png'
+            link:'http://bit.ly/KatsirChatBot'
           },
         ],
       },
@@ -99,7 +99,7 @@ export default {
   .header{
     background-image:url("../assets/Header_Product_Form.png");
     width: 100%;
-    height: 430px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     margin-bottom: 50px;
@@ -113,9 +113,11 @@ export default {
   .poster{
     display: inline-block;
     text-align: center;
+    height: 300px;
   }
   .poster_img{
-    width: 50%;
+    height: 100%;
+    width: auto;
   }
   .judul{
     font-weight: bold;
@@ -164,6 +166,8 @@ export default {
   @media (max-width: 575.98px) { 
     .header{
       height: 150px;
+      width: 100%;
+      
     }
     .linetxt{
       text-align: center; 
@@ -172,6 +176,15 @@ export default {
       margin-top: 20px;
       position: relative;
       bottom:none;
+    }
+    .poster_img{
+      height: 80%;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
     }
     .achievement{
       width: 100%;
@@ -212,7 +225,7 @@ export default {
     }
 
     .poster_img{
-      width: 80%;
+      height:70%;
       position: absolute;
       margin: auto;
       top: 0;

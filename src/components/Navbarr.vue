@@ -16,24 +16,18 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/home">Home</a>
+                        <a class="nav-link" href="/home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/product">Product</a>
+                        <a class="nav-link" href="/product">PRODUCT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn" type="button" style="background-color: #e67e22;">Daftar</a>
+                        <a class="btn btn-square" type="button">JOIN US</a>
                     </li>
                 </ul>
                 
             </div>
         </nav>
-    <!-- <div class="navi" :class="dynamicNav">
-        <div class="logor">Logo</div>
-        <div class="logo">
-           
-        </div>
-    </div> -->
   </div>
 </template>
 
@@ -44,17 +38,17 @@ export default {
                 shrink: false,
             }
     }),
-    methods:{
-        navset(){
-            this.dynamicNav.shrink= window.scrollY > 60;
-        },
-    },
-    created () {
-        window.addEventListener('scroll', this.navset);
-    },
-    destroyed () {
-        window.removeEventListener('scroll', this.navset);
-    }
+    // methods:{
+    //     navset(){
+    //         this.dynamicNav.shrink= window.scrollY > 60;
+    //     },
+    // },
+    // created () {
+    //     window.addEventListener('scroll', this.navset);
+    // },
+    // destroyed () {
+    //     window.removeEventListener('scroll', this.navset);
+    // }
 }
 
 </script>
@@ -62,6 +56,10 @@ export default {
 <style scoped>
 .nav-item .nav-link{
     color: #ffff;
+}
+.btn.btn-square {
+  border-radius: 10px;
+  background-color: #e67e22;
 }
 .navibar {
   
@@ -74,20 +72,8 @@ export default {
   z-index: 99999;
   transition: all ease .5s;
 }
-
-.logor{
-    width: 50%;
-    color: #fff;
-    padding: 20px;
-    font-size: 18px;
-    transition: all ease .5s;
-}
-.logo{
-    width: 50%;
-    color: #fff;
-    padding: 20px;
-    font-size: 18px;
-    transition: all ease .5s;
+ul li{
+    margin-right: 20px;
 }
 
 .navibar.shrink {
