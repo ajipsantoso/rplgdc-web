@@ -169,7 +169,6 @@ a {
   .header{
     height: 150px;
     width: 100%;
-    
   }
   .linetxt{
     text-align: center; 
@@ -220,11 +219,9 @@ a {
   }
 }
 @media (min-width: 576px) and (max-width: 823.98px) {
-
   .header{
     height: 250px;
   }
-
   .poster_img{
     height:70%;
     position: absolute;

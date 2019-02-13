@@ -1,14 +1,13 @@
 <template>
-<div class="home">
+<div class="product">
   <Navbar/>
   <div class="header">
     <div class="header_desc_group">
       <div class="header_title_group">
-        <h1 class="header_title"> Lorem ipsum dolor sit amet </h1>
+        <h1 class="header_title"> Software Engineering & GDC Laboratory </h1>
         <p class="header_subtitle"> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique atque doloremque
-          corrupti ex assumenda sapiente dolores, minima tempore laudantium.
-          Error ab architecto nisi molestias! 
+          RPL-GDC Laboratory merupakan laboratorium riset di bawah naungan fakultas informatika
+          dengan bidang keilmuan pada Software Engineering dan Game Development. 
         </p>
       </div>
       <div class="ilustrasi_header">
@@ -78,34 +77,34 @@
       <ul class="list_award">
         <li> 
           <p> 
-            <strong> Raginda Firdaus - IF-39-09 : <span> 3rd Winner </span> </strong> - Explosif 
+            <strong> Ahmad Arsyel Abdul Hakim - IF-40-06 <br/> 
+            <span> Best Game Design </span> </strong> <br/>
+            in Global Game Jam 2018 Bandung
           </p>
         </li>
         
         <li> 
           <p> 
-            <strong> Adia Titania Supriyatman - KM 39 BR 1 </strong> <br/>
-            <strong> <span> Finalis Gemastik 11 </span> </strong> 
-            <br/> Kategori Pengembangan Aplikasi Permainan
-          </p>
-        </li>
-
-        <li> 
-          <p> 
-            <strong> Muhammad Arief Ismirianda - D3TK-40-03 </strong> <br/>
-            <strong> <span> Finalis Gemastik 11 </span> </strong> 
-              <br/> Kategori Pengembangan Aplikasi Permainan
+            <strong> Muhammad Afif Amanullah F - IF 40-10 </strong> <br/>
+            <strong> <span> 2nd Runner Up </span> </strong> 
+            <br/> Line Creative 2018 - Chatbot Competition
           </p>
         </li>
         
         <li> 
           <p> 
-          <strong> Muhammad Hasbi Abdul Majid- IF-40-01 </strong> <br/>
-          <strong> <span>Finalis Gemastik 11</span> </strong> 
-          <br/> Kategori Pengembangan Aplikasi Permainan
+          <strong> Galih Yudhasena Trenggala- IF-40-06 </strong> <br/>
+          <strong> <span>The Winner</span> </strong> 
+          <br/> Line Creative 2018 - Chatbot Competition <br/>
+          (Student Category)
           <p> 
-            <strong><span>10th Place </span> </strong> <br/> 
-            at Kongregate March 2018 Game Contest </p>
+            <strong><span>2nd Runner Up </span> </strong> <br/> 
+            Line Creative 2018 - Chatbot Competition <br/>
+            (Productivty Category)
+            </p>
+          <p> 
+            <strong><span>10th & 11th Place </span> </strong> <br/> 
+            at Kongregate Game Contest </p>
         </li>
       </ul>
     </div> <!-- end of award 2 -->
@@ -114,7 +113,7 @@
     <div class="team_content">
       
       <div class="pembina">
-        <img class="member-pembina" src="../assets/assets_lama/aslab/1.png" alt="team">
+        <img class="member-pembina" src="../assets/assets_lama/aslab/0.png" alt="team">
         <p class="nama"> Danang Junaedi S.T., M.T. </p>
         <p class="posisi"> Head of Laboratory </p>
       </div>
@@ -326,6 +325,10 @@ a {
   flex-flow: row wrap;
   margin: 30px;
 }
+.member-pembina {
+  border-radius: 50%;
+  margin-left: 20px;
+}
 .member, .member-pembina {
   width: 170px;
   height: 170px;;
@@ -445,6 +448,10 @@ a {
     flex-flow: row wrap;
     margin: 30px 70px;
   }
+  .member-pembina {
+    border-radius: 50%;
+    margin-left: 0px;
+  }
   .member, .member-pembina {
     width: 170px;
     height: 170px;;
@@ -469,13 +476,21 @@ a {
 }
 
 @media (min-width: 501px) and (max-width: 900px) {
+  .header{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
   .ilustrasi_bulan, .ilustrasi_content {
     display: none;
   }
   .header_title_group {
     width: 90%;
     height: 300px;
-    margin-top: 250px;
+    background: transparent;
+    margin-top: 180px;
   }
   .header_title {
     color: #fff;
@@ -493,6 +508,10 @@ a {
     display: flex;
     flex-flow: row wrap;
     margin: 30px 70px;
+  }
+  .member-pembina {
+    border-radius: 50%;
+    margin-left: 0px;
   }
   .member, .member-pembina {
     width: 170px;
@@ -518,6 +537,13 @@ a {
 
 }
 @media screen and (max-width: 370px) {
+  .header{
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
   .ilustrasi_bulan,.ilustrasi_content {
     display: none;
   }
@@ -588,6 +614,10 @@ a {
     display: flex;
     flex-flow: row wrap;
     margin: 30px 70px;
+  }
+  .member-pembina {
+    border-radius: 50%;
+    margin-left: 0px;
   }
   .member, .member-pembina {
     width: 170px;

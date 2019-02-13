@@ -180,4 +180,10 @@ ul li{
     margin-left: 20px;
   }
 }
+
+@media (max-width: 330px) {
+  .logo_r .logo_txt {
+    font-size: 15px;
+  }
+}
 </style>
