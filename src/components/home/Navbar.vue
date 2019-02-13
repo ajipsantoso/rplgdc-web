@@ -27,7 +27,7 @@
           <router-link to="/product" class="nav-link">PRODUCT</router-link>
         </li>
         <li class="nav-item">
-          <a class="btn btn-square" type="button">JOIN US</a>
+          <a href="http://rplgdc.com/daftar/register" class="btn btn-square" type="button">JOIN US</a>
         </li>
       </ul>
     </div>
@@ -181,9 +181,9 @@ ul li{
   }
 }
 
-@media (max-width: 330px) {
+/* @media (max-width: 350px) {
   .logo_r .logo_txt {
     font-size: 15px;
   }
-}
+} */
 </style>
