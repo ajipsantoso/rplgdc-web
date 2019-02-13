@@ -67,8 +67,8 @@ export default {
         ],
       },
       { icon: img3, judul: 'KATSIR', 
-        desc:'Lead The Boxis simple puzzle game. You just create a path for orange box which leads to finish line. Total Level is 35',
-        achievement:'2nd Runner Up of LINE Creativate 2018 - Chatbot Competition (Productivity Category)',
+        desc:'Katsir is a POS (Point of Sales) service based on chatbot that serves an online transaction recording platform',
+        achievement:'2nd Runner Up of LINE Creative 2018 - Chatbot Competition (Productivity Category)',
         links:[
           { text:'ADD LINE: @gbe6620b atau ',
             link:'http://bit.ly/KatsirChatBot'
