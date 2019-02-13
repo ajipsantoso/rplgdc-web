@@ -72,7 +72,7 @@
     </div>
     <!-- award 2 -->
     <div class="award_content award_two" style="margin-top: 100px;" id="award2">
-      <img class="ilustrasi_matahari2" src="../assets/assets_lama/Matahari.png" alt="roket">
+      <img class="ilustrasi_matahari2" src="../assets/assets_lama/satelit.png" alt="roket">
 
       <ul class="list_award">
         <li> 
@@ -501,6 +501,9 @@ a {
     color: #fff;
     margin-left: 90px;
     font-size: 14px;
+  }
+  .award_content .ilustrasi_matahari2 {
+    display: none;
   }
 
   /* Team Member */
