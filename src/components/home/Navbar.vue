@@ -181,9 +181,9 @@ ul li{
   }
 }
 
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
   .logo_r .logo_txt {
     display: none;
   }
-}
+} */
 </style>
