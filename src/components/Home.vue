@@ -202,7 +202,7 @@ export default {
 
 <style scoped>
 .product {
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 a {
@@ -222,7 +222,7 @@ a {
   background-image: url("../assets/assets_baru/header_img.png");
   height: auto;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   margin-bottom: 30px;
 }
 
@@ -374,6 +374,7 @@ a {
   /* Header */
   .header {
     height: 100vh;
+    width: 100vw;
   }
   .ilustrasi_content {
     background: transparent;
