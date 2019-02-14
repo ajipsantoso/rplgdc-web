@@ -4,7 +4,7 @@
   <div class="header">
     <div class="header_desc_group">
       <div class="header_title_group">
-        <h1 class="header_title"> Software Engineering & GDC Laboratory </h1>
+        <h1 class="header_title"> Software Engineering & GDC Laboratory! </h1>
         <p class="header_subtitle"> 
           RPL-GDC Laboratory merupakan laboratorium riset di bawah naungan fakultas informatika
           dengan bidang keilmuan pada Software Engineering dan Game Development. 
@@ -201,10 +201,15 @@ export default {
 </script>
 
 <style scoped>
+.product {
+  width: 100%;
+  height: auto;
+}
 a {
   color:#e67e22;
 }
-.header{
+/* .header{
+  width: 100%;
   background-image: url("../assets/assets_baru/header_img.png");
   height: 120vh;
   background-size: cover;
@@ -212,6 +217,13 @@ a {
   margin-bottom: 30px;
   overflow: hidden;
   z-index: 99;
+} */
+.header{
+  background-image: url("../assets/assets_baru/header_img.png");
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
 }
 
 /* // wrapper header content */
@@ -251,7 +263,7 @@ a {
   width: 90%;
   height: 120vh;
   background-size: cover;
-  margin-left: 100px;
+  margin-left: auto;
   /* // flexbox */
   display: flex;
   justify-content: center;
@@ -541,12 +553,50 @@ a {
 }
 @media screen and (max-width: 370px) {
   .header{
-    height: 500px;
+    height: 450px;
     background-size: cover;
     background-position: center;
     margin-bottom: 30px;
     overflow: hidden;
   }
+
+  /* START TEST CSS */
+  .header_desc_group {
+    width: 100%;
+    height: auto;
+    /* // flexbox */
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .header_title_group {
+    width: 100%;
+    height: 300px;
+    /* margin-top: 150px; */
+  }
+  .header_title {
+    color: #fff;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-top: -20px;
+  }
+  .header_subtitle {
+    color: #fff;
+    margin-left: 0px;
+    font-size: 10px;
+  }
+
+  /* .ilustrasi_header {
+      background: transparent;
+      width: 100%;
+      height: auto;
+      background-size: cover; 
+      display: block;
+      width: 100%;
+      margin-left: 45px;
+    } */
+  /* END OF TEST */
+
   .ilustrasi_bulan,.ilustrasi_content {
     display: none;
   }
@@ -557,13 +607,13 @@ a {
   }
   .header_title {
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 40px;
   }
   .header_subtitle {
     color: #fff;
     margin-left: 40px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .divisi_title, .award_title {
@@ -643,5 +693,73 @@ a {
     font-size: 14px;
     font-weight: bold;
   }
+}
+
+@media screen and (max-width: 310px) {
+  .product {
+    width: 100vh;
+  }
+
+  .header {
+    height: 450px;
+  }
+
+  .header_desc_group {
+    width: 100%;
+    height: auto;
+      /* // flexbox */
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .header_title_group {
+    width: 100%;
+    height: auto;
+    margin-top: 130px;
+    background: transparent;
+    padding: 20px;
+  }
+  
+  .header_title {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .header_subtitle {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 0px;
+    background: transparent;
+    padding: 0px 55px;
+    /* width: 80%; */
+  }
+
+  .ilustrasi_header {
+    background: transparent;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    /* margin-left: 45px; */
+  }
+  .ilustrasi_content {
+    /* background-image: url("../assets/assets_baru/home_group.png");
+    width: 90%;
+    height: 120vh;
+    background-size: cover;
+    margin-left: auto;
+    // flexbox
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+  }
+  .ilustrasi_bulan {
+    width: 400px;
+    height: 340px;
+  }
+
 }
 </style>
