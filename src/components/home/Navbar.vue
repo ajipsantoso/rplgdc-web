@@ -1,6 +1,6 @@
 <template>
 <div class="navbarr">
-  <nav class="navbar navbar-expand-md navbar-dark navibar" :class="dynamicNav">
+  <nav class="navbar navbar-expand-md navbar-dark navibar" :class="dynamicNav" style="background: green;">
     <router-link to="/" class="navbar-brand">
       <div class="logo">
         <div class="logo_l">                        
