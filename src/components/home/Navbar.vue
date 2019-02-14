@@ -90,7 +90,7 @@ ul li{
 }
 .logo {
   font-size: 26px;
-  margin-left: 60px;
+  margin-left: 10px;
   width: 300px;
   height: 60px;
   position: relative;

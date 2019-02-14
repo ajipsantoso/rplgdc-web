@@ -201,17 +201,21 @@ export default {
 </script>
 
 <style scoped>
+body,html{height:100%; width: 100%;}
+.product {
+  width: 100%;
+  margin: 0 auto;
+}
 a {
   color:#e67e22;
 }
 .header{
   background-image: url("../assets/assets_baru/header_img.png");
   height: 120vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
   margin-bottom: 30px;
-  overflow: hidden;
-  z-index: 99;
 }
 
 /* // wrapper header content */
@@ -230,13 +234,13 @@ a {
 }
 .header_title {
   color: #fff;
-  font-size: 60px;
-  margin-left: 90px;
+  font-size: 50px;
+  margin-left: 40px;
 }
 .header_subtitle {
   color: #fff;
-  margin-left: 90px;
-  font-size: 17px;
+  margin-left: 40px;
+  font-size: 15px;
 }
 
 .ilustrasi_header {
@@ -251,7 +255,7 @@ a {
   width: 90%;
   height: 120vh;
   background-size: cover;
-  margin-left: 100px;
+  margin-left: auto;
   /* // flexbox */
   display: flex;
   justify-content: center;
@@ -280,7 +284,7 @@ a {
 }
 .divisi_content .ilustrasi_roket {
   width: 360px;
-  height: 420px;
+  height: 390px;
 }
 .divisi_content .list_divisi {
   list-style: none;
@@ -317,13 +321,13 @@ a {
   height: auto;
   /* Flexbox */
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
 }
 .team_member {
   display: flex;
-  flex-flow: row wrap;
-  margin: 30px;
+  flex-flow: row nowrap;
+  margin: 0px;
 }
 .member-pembina {
   border-radius: 50%;
@@ -334,10 +338,10 @@ a {
   height: 170px;;
 }
 .team_member .struktur_ketua {
-  margin: 0px 100px;
+  margin: 30px 20px;
 }
 .struktur_anggota {
-  margin: 0px 30px;
+  margin: 10px 20px;
 }
 .team_content .nama {
   text-align: center;
@@ -350,18 +354,16 @@ a {
   font-size: 14px;
 }
 
-.navbar{
-  padding: 0;
-}
-.row{
-  margin-bottom: 80px;
-}
-
 /* Responsive Design */
 @media (min-width: 371px) and (max-width: 500px){
+  .product {
+    width: 101%;
+    margin: 0 auto;
+  }
   /* Header */
   .header {
     height: 100vh;
+    width: 100% !important;
   }
   .ilustrasi_content {
     background: transparent;
@@ -540,6 +542,10 @@ a {
 
 }
 @media screen and (max-width: 370px) {
+  .product {
+    width: 101%;
+    margin: 0 auto;
+  }
   .header{
     height: 500px;
     background-size: cover;
