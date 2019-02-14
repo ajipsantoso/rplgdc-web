@@ -4,7 +4,7 @@
   <div class="header">
     <div class="header_desc_group">
       <div class="header_title_group">
-        <h1 class="header_title"> Software Engineering & GDC Laboratory! </h1>
+        <h1 class="header_title"> Software Engineering & GDC Laboratory </h1>
         <p class="header_subtitle"> 
           RPL-GDC Laboratory merupakan laboratorium riset di bawah naungan fakultas informatika
           dengan bidang keilmuan pada Software Engineering dan Game Development. 
@@ -370,7 +370,7 @@ a {
 }
 
 /* Responsive Design */
-@media (min-width: 371px) and (max-width: 500px){
+@media (min-width: 311px) and (max-width: 500px){
   /* Header */
   .header {
     height: 100vh;
@@ -551,149 +551,7 @@ a {
   }
 
 }
-@media screen and (max-width: 370px) {
-  .header{
-    height: 450px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 30px;
-    overflow: hidden;
-  }
-
-  /* START TEST CSS */
-  .header_desc_group {
-    width: 100%;
-    height: auto;
-    /* // flexbox */
-    display: flex;
-    flex-flow: column wrap;
-  }
-
-  .header_title_group {
-    width: 100%;
-    height: 300px;
-    /* margin-top: 150px; */
-  }
-  .header_title {
-    color: #fff;
-    font-size: 10px;
-    margin-left: 0px;
-    margin-top: -20px;
-  }
-  .header_subtitle {
-    color: #fff;
-    margin-left: 0px;
-    font-size: 10px;
-  }
-
-  /* .ilustrasi_header {
-      background: transparent;
-      width: 100%;
-      height: auto;
-      background-size: cover; 
-      display: block;
-      width: 100%;
-      margin-left: 45px;
-    } */
-  /* END OF TEST */
-
-  .ilustrasi_bulan,.ilustrasi_content {
-    display: none;
-  }
-  .header_title_group {
-    width: 90%;
-    height: 300px;
-    margin-top: 180px;
-  }
-  .header_title {
-    color: #fff;
-    font-size: 20px;
-    margin-left: 40px;
-  }
-  .header_subtitle {
-    color: #fff;
-    margin-left: 40px;
-    font-size: 12px;
-  }
-
-  .divisi_title, .award_title {
-    font-size: 30px;
-    margin-top: 100px;
-    margin-bottom: 40px;
-  }
-  .divisi_content, .award_content {
-    background: #fff;
-    margin-bottom: 50px;
-    height: auto;
-  }
-  .divisi_content .ilustrasi_roket {
-    display: none;
-  }
-  .divisi_content .list_divisi {
-    font-size: 16px;
-  }
-  .divisi_content .list_divisi li {
-    margin-bottom: 15px;
-  }
-  .divisi_content .icon-divisi {
-    margin-right: 12px;
-  }
-
-  /* Honor and awards */
-  .award_content .ilustrasi_matahari {
-    /* width: 360px; */
-    height: 270px;
-    /* display: none; */
-    margin-top: 20px;
-    margin-bottom: -40px;
-  }
-  .award_content .ilustrasi_matahari2 {
-    display: none;
-  }
-  .award_content .list_award {
-    list-style: none;
-  }  
-  .award_content .list_award li {
-    margin-bottom: 15px;
-  }
-  .award_content span {
-    color: rgb(240, 113, 39);
-  }
-  .list_award p {
-    font-size: 12px;
-  }
-
-  .team_member {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 30px 70px;
-  }
-  .member-pembina {
-    border-radius: 50%;
-    margin-left: 0px;
-  }
-  .member, .member-pembina {
-    width: 170px;
-    height: 170px;;
-  }
-  .team_member .struktur_ketua {
-    margin: 20px 70px;
-  }
-  .struktur_anggota {
-    margin: 20px 70px;
-  }
-  .team_content .nama {
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  .team_content .posisi {
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
+/*  */
 
 @media screen and (max-width: 310px) {
   .product {
