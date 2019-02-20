@@ -15,7 +15,7 @@
                         oopss... our rocket already take off.
                     </div>
                     <div>
-                        Stay tuned for mor information!
+                        Stay tuned for more information!
                     </div>
                 </div>
                 <div class="box_btn">
@@ -40,8 +40,6 @@ export default {
 body,html{height:100%; width: 100%;}
 .closed {
   width: 100%;
-  vertical-align: middle;
-    justify-content: center;
 }
 a {
   color:#fff;
