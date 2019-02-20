@@ -27,7 +27,7 @@
           <router-link to="/product" class="nav-link">PRODUCT</router-link>
         </li>
         <li class="nav-item">
-          <a href="http://rplgdc.com/daftar/register" class="btn btn-square" type="button">JOIN US</a>
+          <a href="/#/closed" class="btn" role="button">JOIN US</a>
         </li>
       </ul>
     </div>
@@ -51,7 +51,6 @@ methods: {
   navcolaps_js () {
     this.dynamicNav.navcolaps= !this.dynamicNav.navcolaps;
     this.dynamicNav.navcolaps_top= !this.dynamicNav.navcolaps_top;
-    //console.log(this.dynamicNav.navcolap);
   }
 },
 created () {
@@ -76,7 +75,10 @@ destroyed () {
 ul li{
   margin-right: 20px;
 }
-.btn.btn-square {
+a{
+  color: #fff;
+}
+.btn {
   border-radius: 10px;
   background-color: #e67e22;
 }
