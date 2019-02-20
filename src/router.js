@@ -14,6 +14,11 @@ export default new Router({
       path: '/product',
       name: 'product',
       component: () => import(/* webpackChunkName: "product" */ './components/Product.vue')
+    },
+    {
+      path: '/closed',
+      name: 'closed',
+      component: () => import(/* webpackChunkName: "product" */ './components/Closed.vue')
     }
   ]
 })
