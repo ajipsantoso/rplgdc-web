@@ -6,7 +6,7 @@
                         <h1>Type your NIM below...</h1>
                         <input class="formnim" type="text" id="searchinput"  @keyup.enter="$event.target.blur();nimcheck(nim)" 
                         v-model="nim" @blur="placehold='Input NIM then press enter'" 
-                        @focus="placehold='';dynamicResult.hidden_div=true" :placeholder="placehold"/>
+                        @focus="placehold='';dynamicResult.hidden_div=true;" :placeholder="placehold"/>
                     </div>
                     <div class="content_result" :class="dynamicResult" v-html="value_desc"></div>
             </div>
@@ -28,7 +28,8 @@ export default {
   },
   methods:{
       nimcheck(nim){
-          fetch(`http://rplgdc.com/daftar/ceknim_lulus/${nim}`)
+          this.value_desc=''
+          fetch(`https://rplgdc.com/daftar/ceknim_lulus/${nim}`)
           .then(response => response.json())
           .then(data =>{
                 if(data){
