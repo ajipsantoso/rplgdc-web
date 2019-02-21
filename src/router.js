@@ -19,6 +19,11 @@ export default new Router({
       path: '/closed',
       name: 'closed',
       component: () => import(/* webpackChunkName: "product" */ './components/Closed.vue')
+    },
+    {
+      path: '/nextstep',
+      name: 'nextstep',
+      component: () => import(/* webpackChunkName: "product" */ './components/NimCheck.vue')
     }
   ]
 })

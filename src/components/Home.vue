@@ -4,11 +4,30 @@
   <div class="header">
     <div class="header_desc_group">
       <div class="header_title_group">
-        <h1 class="header_title"> Software Engineering & GDC Laboratory </h1>
-        <p class="header_subtitle"> 
-          RPL-GDC Laboratory merupakan laboratorium riset di bawah naungan fakultas informatika
-          dengan bidang keilmuan pada Software Engineering dan Game Development. 
-        </p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="d-block w-100">
+                <h1 class="header_title"> Software Engineering & GDC Laboratory </h1>
+                <p class="header_subtitle">The RPL-GDC is a laboratory supervised by informatics faculties 
+                  with scientific fields in Software Engineering and Game Development.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="">
+                <h1 class="header_title"> Recruitation Announcement </h1>
+                <p class="header_subtitle">Click the button below to see recrutation result
+                </p>
+                <a href="/#/nextstep" class="btn" role="button">I'm Feeling Lucky</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="ilustrasi_header">
         <div class="ilustrasi_content">
@@ -36,8 +55,9 @@
     <div class="award_content">
       <ul class="list_award">
         <li> 
-          <p> <strong> Raginda Firdaus - IF-39-09 : <span> 3rd Winner </span> 
-          </strong> - Explosif 
+          <p> <strong> Raginda Firdaus - IF-39-09 : <br/>
+          <span> 3rd Winner </span> <br/>
+          </strong>ExplosIF 
           </p>
         </li>
         
@@ -147,13 +167,13 @@
 
           <div class="struktur_anggota">
           <img class="member" src="../assets/assets_lama/aslab/5.png" alt="team">
-          <p class="nama"> Hasbi Abdul Majid </p>
-          <p class="posisi"> Eksternal </p>
+          <p class="nama"> Hasbi Abdul Maajid </p>
+          <p class="posisi"> External </p>
         </div>
 
         <div class="struktur_anggota">
           <img class="member" src="../assets/assets_lama/aslab/6.png" alt="team">
-          <p class="nama"> Rani </p>
+          <p class="nama"> Nurani Solechah </p>
           <p class="posisi"> Treasurer </p>
         </div>
       </div>
@@ -202,12 +222,29 @@ export default {
 
 <style scoped>
 body,html{height:100%; width: 100%;}
+.carousel .carousel-item {
+  height: 250px;
+}
+.carousel-item{
+    min-height: 250px;
+}
 .product {
   width: 100%;
   margin: 0 auto;
 }
-a {
-  color:#e67e22;
+a{
+  color:#fff;
+}
+.btn {
+  margin-left: 40px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #e67e22;
+}
+a.btn{
+  font-size: 24px;
+  font-weight: bold;
+  
 }
 .header{
   background-image: url("../assets/assets_baru/header_img.png");
@@ -360,6 +397,15 @@ a {
     width: 101%;
     margin: 0 auto;
   }
+  .btn {
+    width: 200px;
+    border-radius: 10px;
+    background-color: #e67e22;
+  }
+  a.btn{
+    font-size: 32px;
+    font-weight: bold;
+  }
   /* Header */
   .header {
     height: 100vh;
@@ -478,6 +524,9 @@ a {
 }
 
 @media (min-width: 501px) and (max-width: 900px) {
+  a.btn{
+    font-size: 24px;
+  }
   .header{
     height: 500px;
     background-size: cover;
@@ -542,6 +591,9 @@ a {
 
 }
 @media screen and (max-width: 370px) {
+  a.btn{
+    font-size: 24px;
+  }
   .product {
     width: 101%;
     margin: 0 auto;
