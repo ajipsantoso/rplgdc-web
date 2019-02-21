@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .NimCheck{
     width: auto;
-    height: 100vh;
+    height: 115vh;
     background-image: url("../assets/bg_check.png");
     background-size: cover;
     background-repeat: no-repeat 
@@ -100,7 +100,7 @@ h1 {
     color: #fff;
     opacity: 100;
     transition: 0.5s ease;
-    line-height:48px;
+    line-height:40px;
 }
 
 .content_result.hidden_div{
