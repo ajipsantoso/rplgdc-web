@@ -88,7 +88,14 @@ export default class SceneMainMenu extends Phaser.Scene {
     this.load.audio("sndLaser0", [sndLaser0, sndLaser0gg]);
     this.load.audio("bgm", [bgm, bgmgg]);
   }
+  onOut(){
+    this.btnPlay.setTexture('sprBtnPlay');
+  }
 
+  onHover(){
+    this.btnPlay.setTexture('sprBtnPlayHover');
+    this.sfx.btnOver.play();
+  }
   create(){
     console.log("From SceneMainMenu");
     this.add.text(2, this.game.config.height - 2,
@@ -105,8 +112,7 @@ export default class SceneMainMenu extends Phaser.Scene {
         align: 'center'
       }).setOrigin(0.5);
     }
-
-    // this.scene.start('SceneMain');
+    
     if (window.global.bgmInstance === undefined){
       this.bgm = this.sound.add("bgm", {loop: true, volume: 0.5});
       this.bgm.play();
@@ -149,7 +155,6 @@ export default class SceneMainMenu extends Phaser.Scene {
   }
 
   onClick(){
-    console.log()
     if (store.state.play){
       this.btnPlay.setTexture('sprBtnPlayDown');
       this.sfx.btnDown.play();
@@ -161,17 +166,12 @@ export default class SceneMainMenu extends Phaser.Scene {
         },
         loop: false
       });
+    } else {
+      alert('Please insert your NIM and press [ENTER]');
     }
   }
 
-  onOut(){
-    this.btnPlay.setTexture('sprBtnPlay');
-  }
 
-  onHover(){
-    this.btnPlay.setTexture('sprBtnPlayHover');
-    this.sfx.btnOver.play();
-  }
 
   update(){
     for (let i = 0; i < this.backgrounds.length; i++) {
