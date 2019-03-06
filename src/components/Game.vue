@@ -160,10 +160,10 @@ export default {
     // import(/* webpackChunkName: "game" */ '@/components/game/game').then(game => {
     //   this.$nextTick(() => this.game = new Phaser.Game(game.config))
     // });
-    this.game = new Game();
-    this.game.destroy();
-    document.querySelector('canvas').remove();
-    this.game = new Game();
+    setTimeout(()=>{
+          this.game = new Game();
+    }, 500);
+   
   },
   computed:{
     count(){
