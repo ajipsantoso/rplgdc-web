@@ -27,7 +27,7 @@
           <router-link to="/product" class="nav-link">PRODUCT</router-link>
         </li>
         <li class="nav-item">
-          <a href="/#/closed" class="btn" role="button">JOIN US</a>
+          <router-link to="/closed" class="btn">JOIN US</router-link>
         </li>
       </ul>
     </div>

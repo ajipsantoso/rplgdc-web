@@ -24,6 +24,11 @@ export default new Router({
       path: '/nextstep',
       name: 'nextstep',
       component: () => import(/* webpackChunkName: "product" */ './components/NimCheck.vue')
+    },
+    {
+      path: '/rplgdcgame',
+      name: 'rplgdcgame',
+      component: () => import(/* webpackChunkName: "product" */ './components/Game.vue')
     }
   ]
 })

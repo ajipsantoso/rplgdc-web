@@ -20,10 +20,10 @@
             </div>
             <div class="carousel-item active">
               <div class="">
-                <h1 class="header_title"> Recruitation Announcement </h1>
+                <h1 class="header_title">Recruitation Announcement</h1>
                 <p class="header_subtitle">Click the button below to see recrutation result
                 </p>
-                <a href="/#/nextstep" class="btn" role="button">I'm Feeling Lucky</a>
+                <router-link to="/rplgdcgame" class="btn">Here is the Result</router-link>
               </div>
             </div>
           </div>
@@ -102,7 +102,6 @@
             in Global Game Jam 2018 Bandung
           </p>
         </li>
-        
         <li> 
           <p> 
             <strong> Muhammad Afif Amanullah F - IF 40-10 </strong> <br/>
@@ -228,6 +227,9 @@ body,html{height:100%; width: 100%;}
 .carousel-item{
     min-height: 250px;
 }
+.carousel-indicators{
+    bottom: -50px;
+}
 .product {
   width: 100%;
   margin: 0 auto;
@@ -244,7 +246,6 @@ a{
 a.btn{
   font-size: 24px;
   font-weight: bold;
-  
 }
 .header{
   background-image: url("../assets/assets_baru/header_img.png");
@@ -399,12 +400,10 @@ a.btn{
   }
   .btn {
     width: 200px;
-    border-radius: 10px;
-    background-color: #e67e22;
+    margin-left: 50px;
   }
   a.btn{
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 24px;
   }
   /* Header */
   .header {
@@ -524,6 +523,9 @@ a.btn{
 }
 
 @media (min-width: 501px) and (max-width: 900px) {
+  .btn{
+    margin-left: 90px;
+  }
   a.btn{
     font-size: 24px;
   }

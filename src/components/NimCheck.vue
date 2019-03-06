@@ -27,26 +27,26 @@ export default {
   components:{
   },
   methods:{
-      nimcheck(nim){
-          this.value_desc=''
-          fetch(`https://rplgdc.com/daftar/ceknim_lulus/${nim}`)
+    nimcheck(nim){
+          this.value_desc='';
+          fetch(`https://rplgdc.com/daftar/ceknim_lulus2/${nim}`)
           .then(response => response.json())
           .then(data =>{
                 if(data){
-                    this.value_desc=`<h3>Congratulations!</h3>
-                    You have passed the first test to become a part of RPLGDC Lab Family
-                    <br/> Please fill the interview schedule <a class="linkstyle" href="http://bit.ly/WawancaraRPLGDC19">here</a> 
-                    <br/> Last submit until <span>February, 22<sup>th</sup> 2018</span> at <span>23.59 WIB</span>
-                    <br/> Those who don't fill the schedule, are considered to be resigned.
-                    <br/> *<span>note :</span> bring your hardcopy/printout CV, and prepare your portfolio if you want to show it to us.
-                    `
+                    console.log(data);
+                    this.value_desc=`<h3>Congratulations! ${data.nama}, ${data.divisi}</h3>
+                    You have passed the first test to become a part of RPLGDC Lab Family<br/>
+                    Please fill the interview schedule <a href="http://bit.ly/WawancaraRPLGDC19">here</a><br/>
+                    Last submit until <span>February, 22<sup>th</sup> 2018</span> at <span>23.59 WIB</span><br/>
+                    Those who don't fill the schedule, are considered to be resigned.<br/>
+                    *<span>note :</span> bring your hardcopy/printout CV, and prepare your portfolio if you want to show it to us.
+                    `;
                 }else{
                     this.value_desc=`Sorry you haven't succeeded yet :(<br/>Don't be discouraged, never give up!
-                    `
+                    `;
                 }
-                
           }).catch(error => this.value_desc=`Oopps somethings happen... <br/> Check your internet connection. ${error}`)
-          this.dynamicResult.hidden_div=false
+          this.dynamicResult.hidden_div=false;
     },
   }
 }
@@ -55,10 +55,10 @@ export default {
 <style scoped>
 .NimCheck{
     width: auto;
-    height: 115vh;
+    height: 100vh;
     background-image: url("../assets/bg_check.png");
     background-size: cover;
-    background-repeat: no-repeat 
+    background-repeat: no-repeat;
 }
 h1 {
    font-size: 32px;
@@ -111,6 +111,7 @@ h1 {
 .content_result >>> a {
    text-decoration: none;
    font-style: italic;
+   font-weight: bold;
    color: #e67e22;
 }
 
