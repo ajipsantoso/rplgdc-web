@@ -7,7 +7,8 @@
 </template>
 
 <style>
-body,html{height:100%; width: 100%;}
+body,html{
+  height:100%; width: 100%;}
 
 * {
   margin: 0;

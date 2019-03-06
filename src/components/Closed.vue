@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="box_btn">
-                    <a href="/#/" class="btn" role="button">RETURN HOME</a>
+                    <router-link to="/" class="btn">RETURN HOME</router-link>
                 </div>
             </div>
         </div>
