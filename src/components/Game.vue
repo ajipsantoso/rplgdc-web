@@ -1,6 +1,9 @@
 <template>
 <div class="game">
   <transition name="fade">
+    <div class="mustMobile" v-if="mobile">
+      PLEASE ACCESS THIS PAGE FROM PC
+    </div>
     <div v-if="status || (!keyenter && $store.state.loaded)" class="datascore">
       <div class="content_input" v-if="!keyenter">
                 <h1>Type your NIM below...</h1>
@@ -60,21 +63,22 @@ export default {
   components:{
   },
   data: () => ({
-      game:null,
-      nim: null,
-      value_desc:null,
-      boxScore:false,
-      checkNim:false,
-      hscore:false,
-      keyenter:false,
-      recuit_value:null,
-      img_group:false,
-      get_hs:null,
-      placehold:'Input NIM then press [ENTER]',
-      dynamicResult:{
-            hidden_div: true,
-        },
-      err: 'Loading...',
+    mobile:window.innerWidth <= 700,
+    game:null,
+    nim: null,
+    value_desc:null,
+    boxScore:false,
+    checkNim:false,
+    hscore:false,
+    keyenter:false,
+    recuit_value:null,
+    img_group:false,
+    get_hs:null,
+    placehold:'Input NIM then press [ENTER]',
+    dynamicResult:{
+          hidden_div: true,
+      },
+    err: 'Loading...',
   }),
   methods:{
     check(){
@@ -226,6 +230,19 @@ a.btn{
 }
 a.btn:hover{
   color:#1a1a1a;
+}
+.mustMobile{
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  background-color: black;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .datascore{
   position: fixed; /* or absolute */
