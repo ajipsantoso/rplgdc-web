@@ -161,7 +161,7 @@ export default {
     //   this.$nextTick(() => this.game = new Phaser.Game(game.config))
     // });
     this.game = new Game();
-    this.game = destroy();
+    this.game.destroy();
     this.game = new Game();
   },
   computed:{
