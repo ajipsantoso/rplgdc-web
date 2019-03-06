@@ -53,6 +53,7 @@
 <script>
 import Phaser from 'phaser';
 import axios from 'axios';
+import Game from './game/game'
 
 export default {
   name: 'Gaame',
@@ -107,8 +108,6 @@ export default {
       await axios.get(`https://rplgdc.com/daftar/score`)
           .then(data =>{
                 if(data){
-                    //this.boxScore=!this.boxScore;
-                    //this.hscore=!this.hscore;
                     this.err=null;
                     this.value_desc=data.data.hightscore;
                 }
@@ -143,12 +142,12 @@ export default {
                   console.log(data);
                   this.value_desc=`CONGRATULATIONS!<br/><h4>${data.data.nama}<h4/><h5>(${data.data.divisi})</h5>
                   Welcome as part of RPLGDC Lab Family<br/>Please come to our first meet<br/>
-                  <font-awesome-icon :icon="home"/>RPL-GDC LAB F201<br/>
-                  <font-awesome-icon :icon="cloak"/><span>March, 15<sup>th</sup> 2018</span> at <span>18.30 WIB</span><br/>
+                  RPL-GDC LAB F201<br/>
+                  <span>March, 15<sup>th</sup> 2018</span> at <span>18.30 WIB</span><br/>
                   `;
                   this.img_group=true;
               }else{
-                  this.value_desc=`Sorry you haven't succeeded 2<sup>nd</sup> recruitation phase :(<br/>Don't be discouraged, never give up!
+                  this.value_desc=`Sorry you haven't succeeded on 2<sup>nd</sup> recruitment phase :(<br/>Don't be discouraged, never give up!
                   `;
               }
         }).catch(error => this.value_desc=`Oopps somethings happen... <br/> Check your internet connection. ${error}`)
@@ -159,9 +158,10 @@ export default {
     
   },
   mounted() {
-    import(/* webpackChunkName: "game" */ '@/components/game/game').then(game => {
-      this.$nextTick(() => this.game = new Phaser.Game(game.config))
-    });
+    // import(/* webpackChunkName: "game" */ '@/components/game/game').then(game => {
+    //   this.$nextTick(() => this.game = new Phaser.Game(game.config))
+    // });
+    this.game = new Game();
   },
   computed:{
     count(){
