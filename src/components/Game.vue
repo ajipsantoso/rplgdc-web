@@ -162,6 +162,7 @@ export default {
     // });
     this.game = new Game();
     this.game.destroy();
+    document.querySelector('canvas').remove();
     this.game = new Game();
   },
   computed:{
