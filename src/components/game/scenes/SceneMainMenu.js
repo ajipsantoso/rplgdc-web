@@ -167,7 +167,7 @@ export default class SceneMainMenu extends Phaser.Scene {
         loop: false
       });
     } else {
-      alert('Please insert your NIM and press [ENTER]');
+      alert('Please input your NIM and press [ENTER]');
     }
   }
 
