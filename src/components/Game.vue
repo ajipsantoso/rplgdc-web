@@ -36,8 +36,8 @@
             <font-awesome-icon :icon="['fas', 'times']"
             @click="close_box"/>
           </div>
-          <div>
-             <div class="content_result" :class="dynamicResult" v-html="value_desc"></div>
+          <div class="content_result">
+             <div :class="dynamicResult" v-html="value_desc"></div>
              <img src="@/assets/linegroup.jpg" alt="lineqr" v-if="img_group">
           </div>
         </div>
@@ -61,7 +61,6 @@ export default {
   },
   data: () => ({
       game:null,
-      downloaded: true,
       nim: null,
       value_desc:null,
       boxScore:false,
@@ -82,6 +81,7 @@ export default {
       this.score+=1
     },
     showHScore(){
+      this.checkNim=false;
       this.boxScore=true;
       this.hscore=true;
       console.log('gameOver');
@@ -116,7 +116,6 @@ export default {
           });
     },
     async post_highscore(nim,score){
-      
       await this.get_highscore();
       if (score > this.value_desc[4].nilai){
         await axios.post(`https://rplgdc.com/daftar/score`,
@@ -162,6 +161,8 @@ export default {
     //   this.$nextTick(() => this.game = new Phaser.Game(game.config))
     // });
     this.game = new Game();
+    this.game = destroy();
+    this.game = new Game();
   },
   computed:{
     count(){
@@ -186,7 +187,6 @@ export default {
   },
   destroyed(){
     this.game.destroy();
-    this.downloaded = false;
   }
 }
 </script>

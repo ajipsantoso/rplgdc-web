@@ -149,7 +149,6 @@ export default class SceneMainMenu extends Phaser.Scene {
   }
 
   onClick(){
-    console.log()
     if (store.state.play){
       this.btnPlay.setTexture('sprBtnPlayDown');
       this.sfx.btnDown.play();
@@ -161,6 +160,8 @@ export default class SceneMainMenu extends Phaser.Scene {
         },
         loop: false
       });
+    } else {
+      alert('Please insert your NIM and press [ENTER]');
     }
   }
 
