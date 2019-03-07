@@ -1,3 +1,4 @@
+import Phaser from 'phaser'
 import Enemy from './Enemy';
 import EnemyLaser from './EnemyLaser';
 
@@ -11,6 +12,7 @@ export default class GunShip extends Enemy {
       this.x = window.global.width - this.displayWidth;
     }
     this.play("gunship2");
+    this.body.setSize(this.displayWidth*0.5, this.displayHeight, true);
     this.shootTimer = this.scene.time.addEvent({
       delay: Phaser.Math.RND.between(1000, 2000),
       callback: this.doShoot.bind(this),

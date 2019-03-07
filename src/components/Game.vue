@@ -25,7 +25,7 @@
         </div>
         <div v-else v-html='err'>
         </div>
-        <div v-if="$store.state.count >= 30">
+        <div v-if="$store.state.score >= 30">
           <a class="btn" @click="checkUNim(nim)">See Result</a>
         </div>
         <div v-else>
@@ -54,7 +54,6 @@
 
 
 <script>
-import Phaser from 'phaser';
 import axios from 'axios';
 import Game from './game/game'
 
@@ -171,7 +170,7 @@ export default {
   },
   computed:{
     count(){
-      return this.$store.state.count;
+      return this.$store.state.score;
     },
     status(){
       return this.$store.state.gameOver;

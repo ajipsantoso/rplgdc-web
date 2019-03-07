@@ -10,6 +10,7 @@ export default class CarrierShip extends Enemy {
       this.x = window.global.width - this.displayWidth;
     }
     this.play("carriership");
+    this.body.setSize(this.displayWidth*0.7, this.displayHeight*0.8, true);
     // console.log("CarrierShip Created");
   }
 

@@ -68,7 +68,7 @@ let config = {
 window.global = {
   signature: 'Ahmad Arsyel',
   score: 0,
-  gameOver: false,
+  emitter: null,
 };
 export default class Game extends Phaser.Game {
   constructor() {
