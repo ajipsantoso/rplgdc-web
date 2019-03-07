@@ -1,3 +1,4 @@
+import Phaser from 'phaser'
 import Enemy from './Enemy';
 
 export default class ChaserShip extends Enemy {

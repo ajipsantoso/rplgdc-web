@@ -1,8 +1,8 @@
-import CONST from '../data/const';
+import Phaser from 'phaser'
+import CONST from '../data/const'
 import ScrollingBackGround from '../component/ScrollingBackground';
 import LocalDatabase from '../component/LocalDatabase';
 import { store } from '@/store'
-
 import sprBtnPlay from '@/assets/assets_game/sprBtnPlay.png';
 import sprBtnPlayHover from '@/assets/assets_game/sprBtnPlayHover.png';
 import sprBtnPlayDown from '@/assets/assets_game/sprBtnPlayDown.png';
@@ -29,6 +29,7 @@ export default class SceneMainMenu extends Phaser.Scene {
   init(){
     window.global.width = this.game.config.width;
     window.global.height = this.game.config.height;
+    window.emitter = new Phaser.Events.EventEmitter();
     this.dbLocal = new LocalDatabase();
   }
 
@@ -54,7 +55,7 @@ export default class SceneMainMenu extends Phaser.Scene {
           fill: CONST.colors.white
       }
     })
-    .setOrigin(0.5);;
+    .setOrigin(0.5);
     this.load.on('progress', value => {
       console.log(`Loading: ${parseInt(value * 100)} %`);
       loadingText.setText(`${parseInt(value * 100)} %`);

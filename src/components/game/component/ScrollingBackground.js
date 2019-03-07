@@ -1,3 +1,5 @@
+import Phaser from 'phaser'
+
 export default class ScrollingBackGround {
   constructor(scene, key, velocityY) {
     this.scene = scene;
@@ -11,8 +13,8 @@ export default class ScrollingBackGround {
     for (let i = 0; i < 2; i++) {
       let layer = this.scene.add.sprite(0, 0, this.key);
       layer.y = layer.displayHeight * i;
-      let flipX = Phaser.Math.RND.between(0, 10) >= 5 ? -1 : 1;
-      let flipY = Phaser.Math.RND.between(0, 10) >= 5 ? -1 : 1;
+      let flipX = Phaser.Math.Between(0, 10) >= 5 ? -1 : 1;
+      let flipY = Phaser.Math.Between(0, 10) >= 5 ? -1 : 1;
       layer.setScale(flipX * 2, flipY * 2);
       layer.setDepth(-5 - (i - 1));
       this.scene.physics.world.enableBody(layer, 0);
