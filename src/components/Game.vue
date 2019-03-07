@@ -87,7 +87,7 @@ export default {
       this.checkNim=false;
       this.boxScore=true;
       this.hscore=true;
-      console.log('gameOver');
+      //console.log('gameOver');
     },
     checkUNim(nim){
       this.hscore=false;
@@ -128,7 +128,7 @@ export default {
           ],
         )
           .then(response =>{
-            console.log(response);
+            //console.log(response);
             if (response.data.status === 'success_hs'){
               this.get_hs=` Get Global Highscore !`
             }
@@ -141,7 +141,7 @@ export default {
         await axios.get(`https://rplgdc.com/daftar/ceknim_lulus2/${nim}`)
         .then(data =>{
               if(data.data.nama){
-                  console.log(data);
+                  //console.log(data);
                   this.value_desc=`CONGRATULATIONS!<br/><h4>${data.data.nama}<h4/><h5>(${data.data.divisi})</h5>
                   Welcome as part of RPLGDC Lab Internship Member<br/>Please come to our first meet<br/>
                   RPL-GDC LAB F201<br/>
