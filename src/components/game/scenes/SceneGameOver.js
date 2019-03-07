@@ -73,7 +73,7 @@ export default class SceneGameOver extends Phaser.Scene {
     store.state.gameOver=false;
     this.btnRestart.setTexture('sprBtnRestartDown');
     this.sfx.btnDown.play();
-    console.log("RESTART");
+    //console.log("RESTART");
     this.scene.start('SceneMain');
     // this.time.addEvent({
     //   delay: 90,
