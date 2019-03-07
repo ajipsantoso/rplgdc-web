@@ -43,10 +43,10 @@ export default class LocalDatabase {
     let data = this.getData(key);
     if (data){
       localStorage.removeItem(key);
-      console.log("Data " + key + " deleted!");
+      //console.log("Data " + key + " deleted!");
     }
     else {
-      console.log("Data " + key + " not deleted!");
+      //console.log("Data " + key + " not deleted!");
     }
   }
 }

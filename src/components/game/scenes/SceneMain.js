@@ -70,7 +70,7 @@ export default class SceneMain extends Phaser.Scene {
   create(){
     // TODO: ADD TINT IF DAMAGED
     // Define our objects
-    console.log("From SceneMain");
+    //console.log("From SceneMain");
     // this.add.text(window.global.width/2, this.game.config.height - 110, "Title", {fontSize: CONST.fonts.title});
     // this.add.text(window.global.width/2, this.game.config.height - 75, "Normal", {fontSize: CONST.fonts.normal});
     // this.add.text(window.global.width/2, this.game.config.height - 50, "Small", {fontSize: CONST.fonts.small});
@@ -264,7 +264,7 @@ export default class SceneMain extends Phaser.Scene {
     let threshold = (this.getEnemiesByPosX(380).length >= 3);
     if (threshold){
       randomPosX = Phaser.Math.RND.between(10, window.global.height * 0.5);
-      console.log(`Recallibrate enemy posX to: ${randomPosX}`);
+      //console.log(`Recallibrate enemy posX to: ${randomPosX}`);
     }
     if (Phaser.Math.RND.between(0, 10) >= 3) {
       enemy = new GunShip(
@@ -295,7 +295,7 @@ export default class SceneMain extends Phaser.Scene {
       enemy.body.setImmovable();
     }
     if (enemy !== null){
-      console.log(`Random pos x: ${randomPosX}, enemyType: ${enemy.getData('type')}`);
+      //console.log(`Random pos x: ${randomPosX}, enemyType: ${enemy.getData('type')}`);
       let isChoosen = this.isEnemyType(enemy, 'ChaserShip');
       let scaleRand = isChoosen ? Phaser.Math.RND.between(10, 20) * 0.1 : 1;
       enemy.setScale(scaleRand);
@@ -306,7 +306,7 @@ export default class SceneMain extends Phaser.Scene {
   getEnemiesByPosX(posX){
     let pickedEnemies = [];
     this.enemies.children.iterate( enemy => {
-      console.log(`iterate enemy: ${enemy.x}`);
+      //console.log(`iterate enemy: ${enemy.x}`);
       if (enemy.x > posX){
         pickedEnemies.push(enemy);
       }
