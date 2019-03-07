@@ -25,7 +25,7 @@
         </div>
         <div v-else v-html='err'>
         </div>
-        <div v-if="$store.state.score >= 0">
+        <div v-if="$store.state.score >= 30">
           <a class="btn" @click="checkUNim(nim)">See Result</a>
         </div>
         <div v-else>
