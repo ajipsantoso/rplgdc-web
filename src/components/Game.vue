@@ -25,7 +25,7 @@
         </div>
         <div v-else v-html='err'>
         </div>
-        <div v-if="$store.state.score >= 30">
+        <div v-if="$store.state.score >= 0">
           <a class="btn" @click="checkUNim(nim)">See Result</a>
         </div>
         <div v-else>
@@ -143,13 +143,14 @@ export default {
               if(data.data.nama){
                   console.log(data);
                   this.value_desc=`CONGRATULATIONS!<br/><h4>${data.data.nama}<h4/><h5>(${data.data.divisi})</h5>
-                  Welcome as part of RPLGDC Lab Family<br/>Please come to our first meet<br/>
+                  Welcome as part of RPLGDC Lab Internship Member<br/>Please come to our first meet<br/>
                   RPL-GDC LAB F201<br/>
                   <span>March, 15<sup>th</sup> 2018</span> at <span>18.30 WIB</span><br/>
+                  Please Join Our Group Here:
                   `;
                   this.img_group=true;
               }else{
-                  this.value_desc=`Sorry you haven't succeeded on 2<sup>nd</sup> recruitment phase :(<br/>Don't be discouraged, never give up!
+                  this.value_desc=`Sorry you haven't succeeded on 2<sup>nd</sup> stage recruitment :(<br/>Don't be discouraged, never give up!
                   `;
               }
         }).catch(error => this.value_desc=`Oopps somethings happen... <br/> Check your internet connection. ${error}`)

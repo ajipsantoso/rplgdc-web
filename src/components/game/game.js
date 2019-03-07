@@ -66,7 +66,7 @@ let config = {
     scene: scenes,
 };
 window.global = {
-  signature: 'Ahmad Arsyel',
+  signature: '@RPLGDC2019 | Arsyel - Witsqa - Helmi',
   score: 0,
   emitter: null,
 };

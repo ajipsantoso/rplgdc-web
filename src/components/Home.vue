@@ -21,7 +21,7 @@
             <div class="carousel-item active">
               <div class="">
                 <h1 class="header_title">Recruitation Announcement</h1>
-                <p class="header_subtitle">Click the button below to see recrutation result
+                <p class="header_subtitle">Click the button below to see 2nd stage recruitment result
                 </p>
                 <router-link to="/rplgdcgame" class="btn">Here is the Result</router-link>
               </div>
